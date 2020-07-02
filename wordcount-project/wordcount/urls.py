@@ -18,6 +18,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.homepage),
-    path('eggs/', views.eggs)
+    path('', views.homepage, name='home'),
+    path('counted/', views.counted, name='counted'),
+    path('about/', views.about, name='about')
 ]
